@@ -28,6 +28,9 @@ namespace MyGameList
 					case "5":
 						VisualizarJogo();
 						break;
+                        case "6":
+						JogosTerminados();
+						break;
 					case "C":
 						Console.Clear();
 						break;
@@ -53,6 +56,7 @@ namespace MyGameList
 			Console.WriteLine("3- Atualizar um jogo");
 			Console.WriteLine("4- Excluir um jogo");
 			Console.WriteLine("5- Visualizar um jogo");
+            Console.WriteLine("6- Visualizar jogos finalizados");
 			Console.WriteLine("C- Limpar Tela");
 			Console.WriteLine("X- Sair");
 			Console.WriteLine();
@@ -163,19 +167,46 @@ namespace MyGameList
 		}
         private static void VisualizarJogo()
 		{
-			Console.Write("Digite o id do Jogo: ");
+			Console.Write("Digite o id do Jogo que sera visualizado: ");
 			int indiceJogo = int.Parse(Console.ReadLine());
 
 			var jogo = repositorio.RetornaPorId(indiceJogo);
 
-			Console.WriteLine(jogo);
+			Console.WriteLine(jogo.ToString());
 		}
         private static void ExcluirJogo()
 		{
-			Console.Write("Digite o id do jogo: ");
-			int indiceJogo = int.Parse(Console.ReadLine());
+			Console.Write("Digite o id do jogo que sera excluido: ");
+			int indice = int.Parse(Console.ReadLine());
 
-			repositorio.Exclui(indiceJogo);
+            var jogo = repositorio.RetornaPorId(indice);
+            Console.WriteLine("Jogo {0} foi excluido.",jogo.retornaTitulo());
+			repositorio.Exclui(indice);
+		}
+        private static void JogosTerminados()
+		{
+			Console.WriteLine("Listando os jogos terminados");
+
+			var lista = repositorio.Lista();
+            int cont = 0;
+
+			if (lista.Count == 0)
+			{
+				Console.WriteLine("Nenhum jogo cadastrado.");
+				return;
+			}
+
+			foreach (var jogo in lista)
+			{
+                var excluido = jogo.retornaExcluido();
+                var finalizado = jogo.retornaFinalizado();
+                if (!excluido && finalizado)
+                {
+                    cont++;
+				    Console.WriteLine("#ID {0}: - {1}", jogo.retornaId(), jogo.retornaTitulo());
+                }
+			}
+            Console.WriteLine("Numero de jogos finalizados: {0}", cont);
 		}
     }
 }
