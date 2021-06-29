@@ -28,10 +28,10 @@ namespace MyGameList
 					case "5":
 						VisualizarJogo();
 						break;
-                    case "6":
+               		case "6":
 						JogosTerminados();
 						break;
-                    case "7":
+               		case "7":
 						MaiorNota();
 						break;
 					case "C":
