@@ -28,8 +28,11 @@ namespace MyGameList
 					case "5":
 						VisualizarJogo();
 						break;
-                        case "6":
+                    case "6":
 						JogosTerminados();
+						break;
+                    case "7":
+						MaiorNota();
 						break;
 					case "C":
 						Console.Clear();
@@ -57,6 +60,7 @@ namespace MyGameList
 			Console.WriteLine("4- Excluir um jogo");
 			Console.WriteLine("5- Visualizar um jogo");
             Console.WriteLine("6- Visualizar jogos finalizados");
+            Console.WriteLine("7- Jogo com a maior nota");
 			Console.WriteLine("C- Limpar Tela");
 			Console.WriteLine("X- Sair");
 			Console.WriteLine();
@@ -207,6 +211,31 @@ namespace MyGameList
                 }
 			}
             Console.WriteLine("Numero de jogos finalizados: {0}", cont);
+		}
+        private static void MaiorNota()
+		{
+			Console.WriteLine("Jogo com a maior nota");
+
+			var lista = repositorio.Lista();
+            int nota = 0;
+            String titulo = "";
+
+			if (lista.Count == 0)
+			{
+				Console.WriteLine("Nenhum jogo cadastrado.");
+				return;
+			}
+
+			foreach (var jogo in lista)
+			{
+                var excluido = jogo.retornaExcluido();
+                if (!excluido && nota < jogo.retornaNota())
+                {
+                    nota = jogo.retornaNota();
+				    titulo = jogo.retornaTitulo();
+                }
+			}
+            Console.WriteLine("A maior nota foi do jogo: {0} com a nota {1}", titulo, nota);
 		}
     }
 }
