@@ -112,8 +112,13 @@ namespace MyGameList
 			Console.Write("Digite a Plataforma do Jogo: ");
 			int entradaPlataforma = int.Parse(Console.ReadLine());
 
-			Console.Write("Digite a Nota do Jogo: ");
-			int entradaNota = int.Parse(Console.ReadLine());
+            Console.Write("Digite a Nota do Jogo (0-10): ");
+            int entradaNota = int.Parse(Console.ReadLine());
+            while (entradaNota < 0 || entradaNota > 10)
+            {
+                Console.Write("Digite a Nota do Jogo (0-10): ");
+                entradaNota = int.Parse(Console.ReadLine());
+            }
 
             Console.Write("Digite se o Jogo foi Finalizado (true or false): ");
 			bool entradaFinalizado = bool.Parse(Console.ReadLine());
@@ -153,8 +158,13 @@ namespace MyGameList
 			Console.Write("Digite a Plataforma do Jogo: ");
 			int entradaPlataforma = int.Parse(Console.ReadLine());
 
-			Console.Write("Digite a Nota do Jogo: ");
-			int entradaNota = int.Parse(Console.ReadLine());
+            Console.Write("Digite a Nota do Jogo (0-10): ");
+            int entradaNota = int.Parse(Console.ReadLine());
+            while (entradaNota < 0 || entradaNota > 10)
+            {
+                Console.Write("Digite a Nota do Jogo (0-10): ");
+                entradaNota = int.Parse(Console.ReadLine());
+            }
 
             Console.Write("Digite se o Jogo foi Finalizado (true or false): ");
 			bool entradaFinalizado = bool.Parse(Console.ReadLine());
