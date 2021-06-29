@@ -6,9 +6,9 @@ namespace MyGameList
         Epic = 2,
         Uplay = 3,
         Origin = 4,
-        Playstation = 6,
-        Xbox = 7,
-        Nintendo = 8,
-        Outro = 9
+        Playstation = 5,
+        Xbox = 6,
+        Nintendo = 7,
+        Outro = 8
     }
 }

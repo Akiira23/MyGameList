@@ -96,8 +96,14 @@ namespace MyGameList
 			{
 				Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(Genero), i));
 			}
-			Console.Write("Digite o gênero entre as opções acima: ");
+			var GeneroCount = Enum.GetNames(typeof(Genero)).Length;
+			Console.Write("Digite o gênero entre as opções acima (1 - {0}): ", GeneroCount);
 			int entradaGenero = int.Parse(Console.ReadLine());
+			while(entradaGenero < 1 || entradaGenero > GeneroCount)
+			{
+				Console.Write("Digite o gênero entre as opções acima (1 - {0}): ", GeneroCount);
+				entradaGenero = int.Parse(Console.ReadLine());
+			}
 
 			Console.Write("Digite o Título do Jogo: ");
 			string entradaTitulo = Console.ReadLine();
@@ -109,8 +115,16 @@ namespace MyGameList
 			{
 				Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(Plataforma), i));
 			}
-			Console.Write("Digite a Plataforma do Jogo: ");
+
+			var PlataformaCount = Enum.GetNames(typeof(Plataforma)).Length;
+			Console.Write("Digite a Plataforma do Jogo (1 - {0}): ", PlataformaCount);
 			int entradaPlataforma = int.Parse(Console.ReadLine());
+			while(entradaPlataforma < 1 || entradaPlataforma > PlataformaCount)
+			{
+				Console.Write("Digite a Plataforma do Jogo (1 - {0}): ", PlataformaCount);
+				entradaPlataforma = int.Parse(Console.ReadLine());
+			}
+
 
             Console.Write("Digite a Nota do Jogo (0-10): ");
             int entradaNota = int.Parse(Console.ReadLine());
@@ -142,8 +156,14 @@ namespace MyGameList
 			{
 				Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(Genero), i));
 			}
-			Console.Write("Digite o gênero entre as opções acima: ");
+			var GeneroCount = Enum.GetNames(typeof(Genero)).Length;
+			Console.Write("Digite o gênero entre as opções acima (1 - {0}): ", GeneroCount);
 			int entradaGenero = int.Parse(Console.ReadLine());
+			while(entradaGenero < 1 || entradaGenero > GeneroCount)
+			{
+				Console.Write("Digite o gênero entre as opções acima (1 - {0}): ", GeneroCount);
+				entradaGenero = int.Parse(Console.ReadLine());
+			}
 
 			Console.Write("Digite o Título do Jogo: ");
 			string entradaTitulo = Console.ReadLine();
@@ -155,8 +175,15 @@ namespace MyGameList
 			{
 				Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(Plataforma), i));
 			}
-			Console.Write("Digite a Plataforma do Jogo: ");
+
+			var PlataformaCount = Enum.GetNames(typeof(Plataforma)).Length;
+			Console.Write("Digite a Plataforma do Jogo (1 - {0}): ", PlataformaCount);
 			int entradaPlataforma = int.Parse(Console.ReadLine());
+			while(entradaPlataforma < 1 || entradaPlataforma > PlataformaCount)
+			{
+				Console.Write("Digite a Plataforma do Jogo (1 - {0}): ", PlataformaCount);
+				entradaPlataforma = int.Parse(Console.ReadLine());
+			}
 
             Console.Write("Digite a Nota do Jogo (0-10): ");
             int entradaNota = int.Parse(Console.ReadLine());
