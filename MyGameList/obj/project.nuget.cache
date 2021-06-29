@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EA1TdxleujBTQ2TgTrG1zgMIcbBN/7PDPkhW1vMHgQl+gtzb0vGn+JQQwtbm66RWtY3WYXJ725iG7gWUsLjDjA==",
+  "dgSpecHash": "n4SuPUSmopO012bHIe8sRV9GZ+WmudyPRE3kXsfZK7XomuN+c3yltZ+b7uvukG0b+jae1R5iSnYJZsE06MCLpw==",
   "success": true,
-  "projectFilePath": "D:\\Usuarios\\aah95\\MyGameList\\MyGameList.csproj",
+  "projectFilePath": "D:\\Usuarios\\aah95\\MyGameList\\MyGameList\\MyGameList.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

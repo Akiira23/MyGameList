@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using MyGameList.Interfaces;
 
-namespace MyGameList.Classes
+namespace MyGameList
 {
     public class GameRepositorio : IRepositorio<Games>
     {

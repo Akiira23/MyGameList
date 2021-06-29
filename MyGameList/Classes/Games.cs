@@ -1,5 +1,5 @@
 using System;
-namespace MyGameList.Classes
+namespace MyGameList
 {
     public class Games : EntidadeBase
     {

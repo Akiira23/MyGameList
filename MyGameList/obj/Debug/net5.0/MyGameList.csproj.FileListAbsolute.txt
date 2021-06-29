@@ -1,0 +1,16 @@
+D:\Usuarios\aah95\MyGameList\MyGameList\bin\Debug\net5.0\MyGameList.exe
+D:\Usuarios\aah95\MyGameList\MyGameList\bin\Debug\net5.0\MyGameList.deps.json
+D:\Usuarios\aah95\MyGameList\MyGameList\bin\Debug\net5.0\MyGameList.runtimeconfig.json
+D:\Usuarios\aah95\MyGameList\MyGameList\bin\Debug\net5.0\MyGameList.runtimeconfig.dev.json
+D:\Usuarios\aah95\MyGameList\MyGameList\bin\Debug\net5.0\MyGameList.dll
+D:\Usuarios\aah95\MyGameList\MyGameList\bin\Debug\net5.0\ref\MyGameList.dll
+D:\Usuarios\aah95\MyGameList\MyGameList\bin\Debug\net5.0\MyGameList.pdb
+D:\Usuarios\aah95\MyGameList\MyGameList\obj\Debug\net5.0\MyGameList.csproj.AssemblyReference.cache
+D:\Usuarios\aah95\MyGameList\MyGameList\obj\Debug\net5.0\MyGameList.GeneratedMSBuildEditorConfig.editorconfig
+D:\Usuarios\aah95\MyGameList\MyGameList\obj\Debug\net5.0\MyGameList.AssemblyInfoInputs.cache
+D:\Usuarios\aah95\MyGameList\MyGameList\obj\Debug\net5.0\MyGameList.AssemblyInfo.cs
+D:\Usuarios\aah95\MyGameList\MyGameList\obj\Debug\net5.0\MyGameList.csproj.CoreCompileInputs.cache
+D:\Usuarios\aah95\MyGameList\MyGameList\obj\Debug\net5.0\MyGameList.dll
+D:\Usuarios\aah95\MyGameList\MyGameList\obj\Debug\net5.0\ref\MyGameList.dll
+D:\Usuarios\aah95\MyGameList\MyGameList\obj\Debug\net5.0\MyGameList.pdb
+D:\Usuarios\aah95\MyGameList\MyGameList\obj\Debug\net5.0\MyGameList.genruntimeconfig.cache
